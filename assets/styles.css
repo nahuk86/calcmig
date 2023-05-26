@@ -32,18 +32,25 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    height: 100vh;
     width: 100vw;
     position: absolute;
     top: 0;
     left: 0;
     font-size: 2em;
     z-index: 1;
+    height: 50vh;
 }
 
 #splash p {
     position: relative;
     z-index: 1;
+  }
+
+#questionForm p {
+    position: relative;
+    z-index: 1;
+    font-size: 25px;
+    margin-bottom: 20px;
   }
   
 .center-content {
@@ -120,3 +127,53 @@ button:hover {
     background: #38ef7d;
   }
   
+
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.Block_Loading_Balls {
+
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.ball_container_sB {
+
+    position: absolute;
+    top: calc(50% - 4em);
+    left: calc(50% - 16em);
+    width: 32em;
+    white-space: nowrap;
+    text-align: center;
+}
+.loading_ball {
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: rgb( 255, 255, 255 );
+    transform: translate(-4em,0%) scale(0);
+    opacity: 0;
+    animation: 2400ms linear infinite visible_orbit;
+}
+.loading_ball._b { z-index: 1; animation-delay: 800ms; }
+.loading_ball._c { z-index: 1; animation-delay: 1600ms; }
+
+@keyframes visible_orbit {
+
+    0% { transform: translate(-4em,0%) scale(0); opacity: 0; }
+    25% { transform: translate(-8em,0%) scale(1); opacity: 1; }
+    50% { transform: translate(12em,0%) scale(1.5); opacity: 1; }
+    75% { transform: translate(32em,0%) scale(1); opacity: 1; }
+    100% { transform: translate(24em,0%) scale(0); opacity: 0; }
+}
+@media ( max-width : 400px ) {body {  font-size: 60%;  }}@media ( min-width : 401px ) and ( max-width : 600px ) {body {  font-size: 70%;  }}@media ( min-width : 601px ) and ( max-width : 800px ) {body {  font-size: 80%;  }}@media ( min-width : 801px ) and ( max-width : 1000px ) {body {  font-size: 90%;  }}@media ( min-width : 1001px ) and ( max-width : 1200px ) {body {  font-size: 100%;  }}@media ( min-width : 1201px ) and ( max-width : 1400px ) {body {  font-size: 100%;  }}@media ( min-width : 1401px ) {body {  font-size: 125%;  }}
