@@ -13,7 +13,7 @@ body {
   font-size: 3em;
   text-align: center;
   z-index: 2;
-  background-image: url('assets/images/pfizer-brand.png');
+  background-image: url('/assets/images/pfizer-brand.png');
   background-size: cover;
   background-position: center;
   height: 100vh; /* take up full height of the viewport */
