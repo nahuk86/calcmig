@@ -68,9 +68,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
         let yesCount = answers.filter(answer => answer === 'yes').length;
 
         if (yesCount >= 4) {
-            resultText.innerText = 'You answered "Yes" to 4 or more questions.';
+            resultText.innerText = 'Es posible que posea migraña.';
         } else {
-            resultText.innerText = 'You answered "Yes" to 3 or fewer questions.';
+            resultText.innerText = 'No posee migraña.';
         }
     }
 
