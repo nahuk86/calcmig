@@ -14,7 +14,7 @@
   <body>
     <div id="splash">
       <div class="center-content">
-      <p>Assessment Migrañas</p>
+      <p>Cuestionario para diagnóstico de migraña (MS-Q)</p>
       <div class="Block_Loading_Balls"><div class="ball_container_sB"><span class="loading_ball _a"></span><span class="loading_ball _b"></span><span class="loading_ball _c"></span></div></div>
     </div>
   </div>
@@ -35,69 +35,69 @@
         <!-- Question 1 -->
         <div class="question" id="question1">
           <div class="content">
-          <p>Question 1?</p>
-          <input type="radio" name="question1" value="yes"> Yes
+          <p>¿Tienes dolores de cabeza frecuentes o intensos?</p>
+          <input type="radio" name="question1" value="yes"> Sí
           <input type="radio" name="question1" value="no"> No
         </div>
         <div>
-          <button onclick="nextQuestion(2)">Next</button>
+          <button onclick="nextQuestion(2)">Siguiente</button>
         </div>
         </div>
         <!-- Question 2 -->
         <div class="question hidden" id="question2">
           <div class="content">
-          <p>Question 2?</p>
-          <input type="radio" name="question2" value="yes"> Yes
+          <p>¿Tus dolores de cabeza suelen durar más de 4 horas?</p>
+          <input type="radio" name="question2" value="yes"> Sí
           <input type="radio" name="question2" value="no"> No
         </div>
         <div>
-          <button onclick="previousQuestion(2)">Back</button>
-          <button onclick="nextQuestion(3)">Next</button>
+          <button onclick="previousQuestion(2)">Atrás</button>
+          <button onclick="nextQuestion(3)">Siguiente</button>
         </div>
         </div>
         <!-- Question 3 -->
         <div class="question hidden" id="question3">
           <div class="content">
-          <p>Question 3?</p>
-          <input type="radio" name="question3" value="yes"> Yes
+          <p>¿Suele sufrir náuseas cuando tiene dolor de cabeza?</p>
+          <input type="radio" name="question3" value="yes"> Sí
           <input type="radio" name="question3" value="no"> No
           </div>
           <div> 
-            <button onclick="previousQuestion(3)">Back</button>
-            <button onclick="nextQuestion(4)">Next</button>
+            <button onclick="previousQuestion(3)">Atrás</button>
+            <button onclick="nextQuestion(4)">Siguiente</button>
           </div>
         <!-- Add the rest of your questions here -->
         </div>
         <div class="question hidden" id="question4">
           <div class="content">
-          <p>Question 4?</p>
-          <input type="radio" name="question4" value="yes"> Yes
+          <p>¿Te molesta la luz o el ruido cuando tenes dolor de cabeza?</p>
+          <input type="radio" name="question4" value="yes"> Sí
           <input type="radio" name="question4" value="no"> No
         </div>
         <div>
-          <button onclick="previousQuestion(4)">Back</button>
-          <button onclick="nextQuestion(5)">Next</button>
+          <button onclick="previousQuestion(4)">Atrás</button>
+          <button onclick="nextQuestion(5)">Siguiente</button>
         </div>
         </div>
         <div class="question hidden" id="question5">
           <div class="content">
-          <p>Question 5?</p>
-          <input type="radio" name="question5" value="yes"> Yes
+          <p>¿El dolor de cabeza limita alguna de sus actividades físicas o intelectuales?</p>
+          <input type="radio" name="question5" value="yes"> Sí
           <input type="radio" name="question5" value="no"> No
         </div>
         <div>
-          <button onclick="previousQuestion(5)">Back</button>
-          <button onclick="nextQuestion(6)">Next</button>
+          <button onclick="previousQuestion(5)">Atrás</button>
+          <button onclick="nextQuestion(6)">Siguiente</button>
         </div>
         </div>
         <!-- "See Results" button after the last question -->
-        <button id="resultsButton" class="hidden" onclick="showResults()">See Results</button>
+        <button id="resultsButton" class="hidden" onclick="showResults()">Ver Resultados</button>
       </div>
       
       <!-- Add more question blocks as needed, each with its unique id and adjusted nextQuestion() call. Add a Back button as needed -->
       <div id="result" class="hidden">
         <p id="resultText"></p>
-        <button onclick="restart()" id="restartButton" class="hidden">Restart</button>
+        <button onclick="restart()" id="restartButton" class="hidden">Reiniciar</button>
     </div>
     
   </body>
