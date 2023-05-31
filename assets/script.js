@@ -68,7 +68,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         let yesCount = answers.filter(answer => answer === 'yes').length;
 
         if (yesCount >= 4) {
-            resultText.innerText = 'Es posible que posea migraña.';
+            resultText.innerText = 'Es posible que posea migraña, se sugiere consultar a un especialista.';
         } else {
             resultText.innerText = 'No posee migraña.';
         }
